@@ -1,6 +1,5 @@
 # YOLO Object detection using OpenCV with Python
 
-[yolov3 weights](https://pjreddie.com/media/files/yolov3.weights) can be downloaded from here
 
 # Introduction:
     * YOLO is a deep learning algorythm  -- So no Installation is needed
@@ -23,6 +22,7 @@ Framaework | Developed by | Advantages | Disadvantages
 **OpenCV** |  | No need to install (just import it like python module) | it only works with CPU, so you can’t get really high speed to process videos in real time.
 
 # Steps to Start:
+[yolov3 weights](https://pjreddie.com/media/files/yolov3.weights) can be downloaded from here
   * To run this model we need 3-files:
 
 *Weights file* | Get the trained model weights (you can use the weights from the above link)
@@ -60,5 +60,6 @@ Framaework | Developed by | Advantages | Disadvantages
 # Original Image:
 ![Input Image](https://github.com/sumankanukollu/YOLO/blob/master/S13_YOLOv3_Object_detection/suman_1_input.jpg)
 
-# Output Image:
+# Output Image: 
+##### Detected 6-Objects (Person,chair,clock,refrigerator,cell phone and cup)
 ![Objects Detected Image](https://github.com/sumankanukollu/YOLO/blob/master/S13_YOLOv3_Object_detection/suman_1_obj_detection.jpg)
