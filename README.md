@@ -9,9 +9,8 @@
 
 [Github Directory - Assignment -13](https://github.com/sumankanukollu/YOLO)
 
-### Assignment 13-1
-
-OpenCV Yolo: [SOURCE (https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
+### Assignment 13-1:
+[OpenCV source](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
 1. Run this above code on your laptop or Colab. 
 2. Take an image of yourself, holding another object which is there in COCO data set (search for COCO classes to learn). 
@@ -62,6 +61,31 @@ Training Custom Dataset on Colab for YoloV3
 6. Share the link of your YouTube video
 7. Share the link of your YouTube video on LinkedIn, Instagram, etc! You have no idea how much you'd love people complimenting you! 
 
+#### Resources
+  * [Trained weights are placed in google drive](https://drive.google.com/drive/u/1/folders/1306WHjGv0O4Il9GDvjMArGc37pLMOM-C)
+  * [Custom Train dataset (images and labels) is placed in google drive](https://drive.google.com/drive/u/1/folders/1dMEiGlPPTg6N_Xz9vch8_gBcrF4IA1DB)
+  * Command to run : 
+  `!python detect.py --conf-thres 0.1 --output Tom_Test_BB_1500 --source test_yolov3_tomNdJerry_Diwali.mp4`
+  * detect.py Modifications:
+    ```
+        parser.add_argument('--cfg', type=str, default='cfg/yolov3-custom.cfg', help='*.cfg path')
+        parser.add_argument('--names', type=str, default='data/customdata/custom.names', help='*.names path')
+        parser.add_argument('--weights', type=str, default='weights/best.pt', help='weights path')
+        parser.add_argument('--source', type=str, default='data/customdata/Tom_Test/', help='source')  # input file/folder, 0 for webcam
+        parser.add_argument('--output', type=str, default='output', help='output folder')  # output folder
+        parser.add_argument('--img-size', type=int, default=512, help='inference size (pixels)')
+        parser.add_argument('--conf-thres', type=float, default=0.3, help='object confidence threshold')
+        parser.add_argument('--iou-thres', type=float, default=0.6, help='IOU threshold for NMS')
+        parser.add_argument('--fourcc', type=str, default='mp4v', help='output video codec (verify ffmpeg support)')
+        parser.add_argument('--half', action='store_true', help='half precision FP16 inference')
+        parser.add_argument('--device', default='', help='device id (i.e. 0 or 0,1) or cpu')
+        parser.add_argument('--view-img', action='store_true', help='display results')
+        parser.add_argument('--save-txt', action='store_true', help='save results to *.txt')
+        parser.add_argument('--classes', nargs='+', type=int, help='filter by class')
+        parser.add_argument('--agnostic-nms', action='store_true', help='class-agnostic NMS')
+        parser.add_argument('--augment', action='store_true', help='augmented inference')
+    ```
+
 #### Solution
 
 - This assignment is done as a GROUP and has same submission by all team members. 
@@ -87,5 +111,6 @@ Training Custom Dataset on Colab for YoloV3
   - Share the link to your GitHub project with the steps as mentioned above (for YoloV3 training on Colab) 
 [Github link](https://github.com/sumankanukollu/YOLO/tree/master/YoloV3)
   - Share the link of your YouTube video (your object annotated by your YoloV3 trained model):
+    * [colab Notebook file](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/EVA4_S13_YoloV3_tomNjerry_video_model_suman.ipynb)
     * [Original Vedio](https://www.youtube.com/watch?v=GfkQTW9LlCg)
     * [TOM-Object Annotated and trained by my YOLOv3-model is in Youtube](https://youtu.be/DFOJu0F4eBs)
