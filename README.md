@@ -90,21 +90,39 @@ Training Custom Dataset on Colab for YoloV3
 
 - This assignment is done as a GROUP and has same submission by all team members. 
 - Team members are mentioned at the top
-- Assignment has been executed on a local machine and colab is not used.
+- Assignment has been executed on a local GPU machine and colab is not used.
 - We took object detection of cartoon character '**Tom**' from Tom and Jerry tales
 - Extracted frames from video for dataset
 - Manually annotated 1465 images covering whole body of character 'Tom' (from all team members)
 - Ran for 300 epochs
-- Classes : 1 - tom
+- Classes : 1 - **tom**
+- Training Time: 07.541 hours
+
+- Steps
+  - Made changes to the cfg file
+    - Search for 'filters=255' (you should get entries). Change 255 to 18 = (4+1+1)*3
+    - Search for 'classes=80' and change all three entries to 'classes=1'
+    - burn_in to 100
+    - max_batches to 5000
+    - steps to 4000,4500
+  - custom.names had only 'tom' as class.
+  - custom.txt has path to all images
+  - Trained model for 300 epochs 
+  - Ran detect.py to generate frames for predicted bounding boxes
+  - Tested model with best.pt file generated on new video and uploaded it to Youtube.
+  
 - Resources
-  - Custom Dataset Link
-  - Custom YoloV3 code repository
-  - Weights link
-  - Classnames file
-  - Sample True Bounding Box
-  - Sample Predicted Bounding Box
-  - Youtube Video (Duration: --)
-  - Logs
+  - Custom Dataset (TOM):
+    - [Images](https://github.com/sumankanukollu/YOLO/tree/master/YoloV3/data/customdata/images)
+    - [Labels](https://github.com/sumankanukollu/YOLO/tree/master/YoloV3/data/customdata/labels)
+    
+  - Custom YoloV3 code [repository](https://github.com/sumankanukollu/YOLO/tree/master/YoloV3)
+  
+  - [Youtube Video (Duration: 02:34 mins)](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
+  
+    [![RIP Gene Deitch | Yolov3 Object Detection | Tom Detector](http://img.youtube.com/vi/7_lH-jFB0Cg/0.jpg)](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
+  
+  - [Logs](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/customDataset_TOM_train_log_on_YOLOv3.log)
 
 - Submission
   - Share the link to your GitHub project with the steps as mentioned above (for YoloV3 training on Colab) 
