@@ -115,3 +115,4 @@ Training Custom Dataset on Colab for YoloV3
     * [Training Logs link](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/customDataset_TOM_train_log_on_YOLOv3.log)
     * [Original Vedio](https://www.youtube.com/watch?v=GfkQTW9LlCg)
     * [TOM-Object Annotated and trained by my YOLOv3-model is in Youtube](https://youtu.be/DFOJu0F4eBs)
+    * [2-Along with Audio](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
