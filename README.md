@@ -105,14 +105,19 @@ Training Custom Dataset on Colab for YoloV3
   - Sample Predicted Bounding Box
   - Youtube Video (Duration: --)
   - Logs
-- Credits:
-  - [The School of AI (YoloV3)](https://github.com/theschoolofai/YoloV3)
+
 - Submission
   - Share the link to your GitHub project with the steps as mentioned above (for YoloV3 training on Colab) 
 [Github link](https://github.com/sumankanukollu/YOLO/tree/master/YoloV3)
+[Training Logs link](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/customDataset_TOM_train_log_on_YOLOv3.log)
+
   - Share the link of your YouTube video (your object annotated by your YoloV3 trained model):
     * [colab Notebook file](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/EVA4_S13_YoloV3_tomNjerry_video_model_suman.ipynb)
-    * [Training Logs link](https://github.com/sumankanukollu/YOLO/blob/master/YoloV3/customDataset_TOM_train_log_on_YOLOv3.log)
     * [Original Vedio](https://www.youtube.com/watch?v=GfkQTW9LlCg)
-    * [TOM-Object Annotated and trained by my YOLOv3-model is in Youtube](https://youtu.be/DFOJu0F4eBs)
-    * [2-Along with Audio](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
+    * [Youtube Video (Duration: 00:30 sec)](https://youtu.be/DFOJu0F4eBs)
+    * [Youtube Video (Duration: 02:34 mins)](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
+    [![RIP Gene Deitch | Yolov3 Object Detection | Tom Detector](http://img.youtube.com/vi/7_lH-jFB0Cg/0.jpg)](https://www.youtube.com/watch?v=7_lH-jFB0Cg)
+    
+- Credits:
+
+  - [The School of AI (YoloV3)](https://github.com/theschoolofai/YoloV3)
